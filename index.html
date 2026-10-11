@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>E-TRANSPORTE.PRO — o sistema, por dentro</title>
+    <meta
+      name="description"
+      content="Landing do E-TRANSPORTE.PRO: transfer, grupos, frota, financeiro e o app Android para baixar."
+    />
+    <meta name="theme-color" content="#12100e" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23090a0c'/%3E%3Cpath d='M6 20h20M8 20l2.2-6h11.6L24 20M11 14l1.2-3h7.6L21 14' stroke='%23e8a01a' stroke-width='1.6' fill='none'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650;8..60,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+    <header class="nav">
+      <a class="brand" href="#topo">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28">
+            <path d="M4 21h24M7 21l2.4-7h13.2L25 21M11.2 14l1.3-3.4h6.9L20.8 14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span>E-TRANSPORTE<span>.PRO</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Seções">
+        <a href="#operacao">Operação</a>
+        <a href="#sistema">O sistema</a>
+        <a href="#app">O app</a>
+      </nav>
+      <a class="btn btn-amber nav-cta" data-download href="./downloads/E-TRANSPORTE-Frota.apk" download="E-TRANSPORTE-Frota.apk">
+        Baixar o app
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-mobile">Menu</button>
+    </header>
+
+    <div class="menu-mobile" id="menu-mobile" hidden>
+      <a href="#operacao">Operação</a>
+      <a href="#sistema">O sistema</a>
+      <a href="#app">O app</a>
+      <a data-download href="./downloads/E-TRANSPORTE-Frota.apk" download="E-TRANSPORTE-Frota.apk">Baixar o app</a>
+    </div>
+
+    <main id="conteudo">
+      <section class="hero" id="topo">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot"></span> Sistema de gerenciamento de viagens</p>
+          <h1>A operação inteira.<br />No painel<br />e <em>no bolso</em>.</h1>
+          <p class="lede">
+            O E-TRANSPORTE.PRO acompanha o transfer executivo do pedido até o caixa:
+            solicitações, reservas, motoristas, veículos, contratos, financeiro e o
+            rastreio que o cliente acompanha. O app Android instala esse mesmo sistema no celular.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-amber btn-lg" data-download href="./downloads/E-TRANSPORTE-Frota.apk" download="E-TRANSPORTE-Frota.apk">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 3v10.2l3.3-3.3 1.4 1.4L12 16.9 7.3 11.3l1.4-1.4 3.3 3.3V3h1.999zM5 19h14v2H5v-2z"/></svg>
+              Baixar o app Android
+            </a>
+            <a class="btn btn-ghost btn-lg" href="#sistema">Ver o sistema por dentro</a>
+          </div>
+          <ul class="proof">
+            <li><strong>Um login</strong> por conta, em um aparelho por vez</li>
+            <li><strong>Painel e app</strong> na mesma operação</li>
+            <li><strong>Celular, tablet e PC</strong> com a mesma abertura animada</li>
+          </ul>
+        </div>
+
+        <aside class="sheet" aria-label="Folha do dia">
+          <div class="sheet-top">
+            <span>Folha do dia</span>
+            <strong>14 serviços</strong>
+          </div>
+          <ol class="rides">
+            <li>
+              <time>08:40</time>
+              <span><b>GRU · Terminal 3</b><small>Executivo · embarque confirmado</small></span>
+              <em>A caminho</em>
+            </li>
+            <li>
+              <time>11:15</time>
+              <span><b>Congonhas</b><small>Van · 6 passageiros</small></span>
+              <em class="wait">Reserva</em>
+            </li>
+            <li>
+              <time>16:00</time>
+              <span><b>Santos · ida</b><small>Grupo · volta vinculada</small></span>
+              <em class="wait">Reserva</em>
+            </li>
+          </ol>
+          <p class="sheet-foot">Rastreio liberado. Contrato e caixa nascem com a reserva.</p>
+        </aside>
+      </section>
+
+      <section class="chapter" id="operacao">
+        <div class="chapter-head">
+          <p class="index">01</p>
+          <div>
+            <h2>Do pedido ao caixa, sem planilha no meio.</h2>
+            <p>Cada etapa da viagem fica no mesmo lugar. Quem opera, quem dirige e quem cobra olham o mesmo registro.</p>
+          </div>
+        </div>
+        <ol class="flow">
+          <li>
+            <span>01</span>
+            <h3>Entra o pedido</h3>
+            <p>A solicitação de transfer ou de grupo chega com origem, destino, horário e passageiros. Vira orçamento antes de virar compromisso.</p>
+          </li>
+          <li>
+            <span>02</span>
+            <h3>Vira reserva</h3>
+            <p>A viagem confirmada leva motorista, veículo e, quando houver, a volta vinculada. A agenda e o mapa de abrangência passam a enxergar esse serviço.</p>
+          </li>
+          <li>
+            <span>03</span>
+            <h3>O motorista executa</h3>
+            <p>No app, a agenda do dia mostra o embarque. O cliente acompanha a posição por um link de rastreio, sem entrar no painel.</p>
+          </li>
+          <li>
+            <span>04</span>
+            <h3>O caixa fecha</h3>
+            <p>A reserva gera a receita: a receber, faturada ou já recebida. Despesas ficam em contas a pagar. O relatório mostra quais viagens sustentam o mês.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="chapter system" id="sistema">
+        <div class="chapter-head">
+          <p class="index">02</p>
+          <div>
+            <h2>O que o sistema guarda de verdade.</h2>
+            <p>Abra cada módulo. O texto é o que a operação usa no dia, não uma lista de promessas.</p>
+          </div>
+        </div>
+
+        <div class="explorer">
+          <div class="explorer-nav" role="tablist" aria-label="Módulos do sistema" id="modulos"></div>
+          <article class="explorer-panel" id="modulo-painel" aria-live="polite"></article>
+        </div>
+      </section>
+
+      <section class="chapter split" id="app">
+        <div class="chapter-head">
+          <p class="index">03</p>
+          <div>
+            <h2>O app abre no celular, no tablet e na tela grande.</h2>
+            <p>
+              O APK instala no Android do smartphone, do tablet e do computador que rode Android.
+              A tela acompanha o tamanho. Na abertura, o carro da marca atravessa a faixa e o sistema entra.
+            </p>
+          </div>
+        </div>
+        <div class="install">
+          <ol>
+            <li>
+              <strong>Baixe o APK</strong>
+              <span>O botão entrega o arquivo <code>E-TRANSPORTE-Frota.apk</code> para a pasta de downloads do celular.</span>
+            </li>
+            <li>
+              <strong>Permita a instalação</strong>
+              <span>O Android pede autorização para instalar um app de fora da loja. Confirme só este arquivo.</span>
+            </li>
+            <li>
+              <strong>Abre com a animação</strong>
+              <span>No celular, no tablet ou na janela grande, a abertura desenha a rota e então mostra o login. A empresa entra no painel. O motorista entra na agenda.</span>
+            </li>
+          </ol>
+          <div class="install-cta">
+            <p>Arquivo de instalação para Android</p>
+            <a class="btn btn-amber btn-lg" data-download href="./downloads/E-TRANSPORTE-Frota.apk" download="E-TRANSPORTE-Frota.apk">
+              Baixar E-TRANSPORTE Frota
+            </a>
+            <small>Toque no arquivo depois do download para concluir a instalação.</small>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div>
+        <strong>E-TRANSPORTE.PRO</strong>
+        <span>Gerenciamento de viagens para transporte executivo.</span>
+      </div>
+      <a data-download href="./downloads/E-TRANSPORTE-Frota.apk" download="E-TRANSPORTE-Frota.apk">Baixar o app</a>
+    </footer>
+
+    <div class="dock">
+      <a class="btn btn-amber" data-download href="./downloads/E-TRANSPORTE-Frota.apk" download="E-TRANSPORTE-Frota.apk">Baixar o app</a>
+    </div>
+
+    <dialog class="notice" id="aviso-apk">
+      <form method="dialog">
+        <p class="eyebrow">Arquivo do app</p>
+        <h2>O botão já está ligado ao APK.</h2>
+        <p>
+          Ainda não há um instalador nesta pasta. Quando o arquivo
+          <code>landing/downloads/E-TRANSPORTE-Frota.apk</code>
+          estiver no lugar, este mesmo botão faz o download.
+        </p>
+        <button class="btn btn-amber" value="ok">Entendi</button>
+      </form>
+    </dialog>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
