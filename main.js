@@ -1,3 +1,27 @@
+(function travarZoomNoCelular() {
+  var ua = navigator.userAgent || "";
+  var ipad = /iPad/i.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  var celular = /iPhone|iPod|Windows Phone|IEMobile|Android.+Mobile|webOS|BlackBerry|Opera Mini/i.test(ua);
+  if (!celular || ipad) return;
+
+  var meta = document.querySelector('meta[name="viewport"]');
+  if (meta) {
+    meta.setAttribute(
+      "content",
+      "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover",
+    );
+  }
+  document.documentElement.classList.add("so-celular");
+
+  var bloquearPinça = function (evento) {
+    if (evento.touches && evento.touches.length > 1) evento.preventDefault();
+  };
+  document.addEventListener("touchmove", bloquearPinça, { passive: false });
+  ["gesturestart", "gesturechange", "gestureend"].forEach(function (nome) {
+    document.addEventListener(nome, function (evento) { evento.preventDefault(); }, { passive: false });
+  });
+})();
+
 const modulos = [
   {
     id: "transfer",
