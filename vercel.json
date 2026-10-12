@@ -1,7 +1,4 @@
 {
-  "framework": null,
-  "buildCommand": "",
-  "installCommand": "",
   "headers": [
     {
       "source": "/(.*)",
