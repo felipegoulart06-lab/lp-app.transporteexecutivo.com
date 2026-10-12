@@ -100,8 +100,8 @@ const modulos = [
     nome: "Casa da operação",
     kicker: "Configuração e rotina",
     texto:
-      "A empresa guarda os dados do perfil, as automações por webhook e as anotações do dia. Chamados de suporte ficam dentro do sistema. Uma conta autenticada permanece em um aparelho por vez.",
-    pontos: ["Configurações", "Automações", "Anotações", "Um login"],
+      "A empresa guarda os dados do perfil, as automações por webhook e as anotações do dia. Chamados de suporte ficam dentro do sistema. Uma conta autenticada pode ficar aberta em até três aparelhos ao mesmo tempo.",
+    pontos: ["Configurações", "Automações", "Anotações", "Até 3 aparelhos"],
   },
 ];
 
